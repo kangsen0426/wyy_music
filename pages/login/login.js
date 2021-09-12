@@ -57,7 +57,8 @@ Page({
         //后端验证
         let result = await request("/login/cellphone", {
             phone,
-            password
+            password,
+            isLogin:true
         })
 
         if(result.code == 200){
