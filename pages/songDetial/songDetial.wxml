@@ -1,0 +1,31 @@
+<!--pages/songDetial/songDetial.wxml-->
+<view class="songDetailContainer">
+    <view class="author">{{musicInfo.ar[0].name}}</view>
+    <view class="circle"></view>
+    <image class="needle {{isPlay && 'needleRotate'}}" src="/static/images/song/needle.png"></image>
+
+    <view class="discContainer {{isPlay && 'needleRotate'}}">
+    <image class="disc" src="/static/images/song/disc.png"></image>
+    <image class="musicImage" src="musicInfo.al.picUrl"></image>
+    </view>
+
+    <!-- 进度条 -->
+    <view class="progressControl">
+        <text>00 : 00</text>
+
+        <view class="barControl">
+        
+        </view>
+        <text>03:00</text>
+    </view>
+
+    <!-- 底部控制区域 -->
+    <view class="musicControl">
+        <text class="iconfont icon-iconsMusicyemianbofangmoshiShuffle"></text>
+        <text class="iconfont icon-shangyishou" id="pre" bindtap="handleSwitch"></text>
+        <text class="iconfont icon-bofang {{isPlay ? 'icon-zanting' : 'icon-bofang'}} big" bindtap="handleMusicPlay"></text>
+        <text class="iconfont icon-next" id="next" bindtap="handleSwitch"></text>
+        <text class="iconfont icon-iconsMusicyemianbofangmoshiPlayList"></text>
+    
+    </view>
+</view>

@@ -11,6 +11,11 @@ Page({
         recommendList: [], // 推荐歌单数据
         topList: [], //排行榜数据
     },
+    clickRecommend(){
+        wx.navigateTo({
+          url: '/pages/recommendSong/recommendSong',
+        })
+    },
 
     /**
      * 生命周期函数--监听页面加载

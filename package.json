@@ -1,0 +1,22 @@
+{
+  "name": "wyy",
+  "version": "1.0.0",
+  "description": "\"# wyy_music\"",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kangsen0426/wyy_music.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kangsen0426/wyy_music/issues"
+  },
+  "homepage": "https://github.com/kangsen0426/wyy_music#readme",
+  "dependencies": {
+    "pubsub-js": "^1.9.3"
+  }
+}
